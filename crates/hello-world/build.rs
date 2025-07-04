@@ -7,7 +7,7 @@ fn main() {
         .join("DENO_EXT_QUICKSTART.snapshot");
 
     let snapshot_options = SnapshotOptions {
-        ts_version:"5.8.3".to_owned(),
+        ts_version: "5.8.3".to_owned(),
         v8_version: deno_core::v8::VERSION_STRING,
         target: std::env::var("TARGET").unwrap(),
     };

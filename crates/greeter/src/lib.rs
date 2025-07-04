@@ -8,5 +8,6 @@ fn greet(#[string] value: String) {
 extension!(
   hello_world,
   ops = [greet],
+  esm_entry_point = "ext:hello_world/hello_world.js",
   esm = ["hello_world.js"],
 );
