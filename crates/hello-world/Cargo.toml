@@ -1,0 +1,20 @@
+[package]
+name = "hello-world"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap.workspace = true
+deno_core.workspace = true
+deno_runtime.workspace = true
+tokio.workspace = true
+
+deno_fs = "0.119"
+
+sys_traits.workspace = true
+
+[build-dependencies]
+deno_core.workspace = true
+deno_runtime.workspace = true
+
+greeter.path = "../greeter"
